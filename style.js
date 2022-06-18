@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
@@ -6,7 +7,7 @@ const {check, validationResult} = require("express-validator");
 const app = express();
 
 
-mongoose.connect("mongodb://localhost:27017/styleDB");
+mongoose.connect(process.env.MONGO);
 
 const reviewSchema = {
     name: String,
@@ -67,6 +68,6 @@ app.post("/reviews", check("rate").exists(), check("rating").exists(), function(
    }   
 });
 
-app.listen(4000, function(req, res){
+app.listen(process.env.PORT, function(req, res){
     console.log("It's Time to Shine!");
 });
