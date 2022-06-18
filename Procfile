@@ -1,1 +1,1 @@
-web: node bank.js
+web: node style.js
