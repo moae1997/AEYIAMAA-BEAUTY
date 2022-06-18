@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* teaser ++++++++++++++++++++++++++++ */
+.books {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: pink;
+    padding: 3px;
+    border: 1px solid violet;
+    border-radius: 5%;
+}
+.books a {
+    text-decoration: none;
+}
+.books h2 {
+    text-align: center;
+    color: violet;
+}
+.bo {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: gray;
+    padding: 3px;
+    border: 1px solid gold;
+    border-radius: 5%;
+}
+.bo a {
+    text-decoration: none;
+}
+.bo h2 {
+    text-align: center;
+    color: gold;
+}
+.boo {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: purple;
+    padding: 3px;
+    border: 1px solid lightgreen;
+    border-radius: 5%;
+}
+.boo a {
+    text-decoration: none;
+}
+.boo h2 {
+    text-align: center;
+    color: lightgreen;
+}
+.b {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: white;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+.b a {
+    text-decoration: none;
+}
+.b h2 {
+    text-align: center;
+    color: black;
+}
+
+/* header ++++++++++++++++++++++++++++ */
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url("door1.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+.title_div {
+    display: grid;
+    justify-content: center;
+}
+.nav_div {
+    display: grid;
+    justify-content: end;
+    margin-right: 20px;
+}
+.logo_img {
+    border-radius: 50%;
+}
+.main_title {
+    font-size: 12.5vh;
+    font-family: 'Indie Flower', cursive;
+    color: pink;
+    text-shadow: 2px 2px 2px black;
+}
+.nav_main {
+    list-style: none;
+}
+.nav_main a {
+    text-decoration: none;
+    font-size: 5vh;
+    font-weight: bold;
+    color: pink;
+    text-shadow: 2px 2px 2px black;
+}
+.nav_main li {
+    margin-bottom: 10px;
+}
+.nav_main li:hover, .nav_main a:hover {
+    background-color: white;
+}
+
+
+/* deals ++++++++++++++++++++++++++++ */
+.deals {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: pink;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 40px;
+}
+.deal_div {
+    display: grid;
+    justify-content: center;
+}
+.deal_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+.item {
+    display: grid;
+    justify-content: center;
+}
+.deals h2 {
+    font-size: 4vh;
+    text-shadow: 2px 2px 2px white;
+    margin-bottom: 10px;
+}
+.deal_title {
+    padding: 15px;
+    font-size: 5vh;
+    text-shadow: 2px 2px 2px white;
+}
+
+
+/* galary ++++++++++++++++++++++++++++ */
+
+#galary {
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 40px;
+}
+.galary {
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pics {
+    border-radius: 5%;
+}
+
+
+/* reviews ++++++++++++++++++++++++++++ */
+
+#reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;
+    background-color: pink;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 200px;
+}
+.review_div {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.cont {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+.cont .star input {
+    display: none;
+}
+.star label {
+    font-size: 60px;
+    color: #444;
+}
+.star h2 {
+    font-size: 3vh;
+    text-shadow: 2px 2px 2px pink;
+}
+.star .btn {
+    padding: 3px;
+    font-size: 2vh;
+    text-shadow: 2px 2px 2px pink;
+} 
+.star input:not(:checked) ~ label:hover, .star input:not(:checked) ~ label:hover ~ label {
+    color: gold;
+}
+.star input:checked ~ label {
+    color: gold;
+}
+.star textarea {
+    overflow: scroll;
+    font-size: 2vh;
+}
+.review_div2 {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.btns {
+    margin-top: 10px;
+}
+.btns button {
+    padding: 3px;
+    font-size: 2vh;
+    text-shadow: 2px 2px 2px pink;
+}
+.title_review {
+    font-size: 4vh;
+    text-shadow: 2px 2px 2px white;
+}
+.comments {
+    font-size: 3vh;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 2%;
+    background-color: #f1f1f1;
+    overflow: scroll;
+}
+.hide {
+    display: none;
+}
+
+/* footer ++++++++++++++++++++++++++++ */
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border: 0.1px solid gray;
+}
+.contact {
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+.contact p {
+    margin-bottom: 5px;
+}
+.Social {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.Social a {
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: black;
+}
+
+/* booking ++++++++++++++++++++++++++++ */
+.booking_div {
+    margin-bottom: 200px;
+} 
+.book {
+    margin: auto;
+    width: 100%;
+    height: 600px;
+}
+
+/* service ++++++++++++++++++++++++++++ */
+
+.service {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.serv {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.service h2 {
+    font-size: 6vh;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px pink;
+    text-align: center;
+
+}
+.service table td {
+    font-size: 2.5vh;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
