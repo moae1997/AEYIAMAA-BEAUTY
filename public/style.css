@@ -330,18 +330,9 @@
 
 /* MQ ++++++++++++++++++++++++++++ */
 @media screen and (max-width: 400px) {
-    .books {
-     display: none;
-    }
-    .boo {
+    .hidden {
         display: none;
-    }
-    .bo {
-        display: none;
-    }
-    .b {
-        display: none;
-    }   
+    }  
     .logo_img {
         width: 50px;
     } 
