@@ -330,14 +330,26 @@
 
 /* MQ ++++++++++++++++++++++++++++ */
 @media screen and (max-width: 400px) {
-    .teas {
+    .books {
      display: none;
     }
+    .boo {
+        display: none;
+    }
+    .bo {
+        display: none;
+    }
+    .b {
+        display: none;
+    }   
     .logo_img {
         width: 50px;
     } 
     .main_title {
         font-size: 5vh;
+    }
+    .nav_div {
+        margin-right: 0;
     }
     .nav_main a {
         font-size: 3vh;
@@ -350,6 +362,9 @@
     }
     .deals h2 {
         font-size: 2vh;
+    }
+    .deals p {
+        font-size: 1.7vh;
     }
     .galary {
         width: 70%;
@@ -364,7 +379,7 @@
         font-size: 1.7vh;
     }
     .star label {
-        font-size: 2vh;
+        font-size: 2.5vh;
     }
     .star .btn {
         font-size: 1.7vh;
