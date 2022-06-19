@@ -93,6 +93,7 @@
     margin-right: 20px;
 }
 .logo_img {
+    width: 200px;
     border-radius: 50%;
 }
 .main_title {
@@ -219,6 +220,7 @@
 .star textarea {
     overflow: scroll;
     font-size: 2vh;
+    max-width: 200px;
 }
 .review_div2 {
     display: grid;
@@ -326,6 +328,66 @@
 }
 
 
+/* MQ ++++++++++++++++++++++++++++ */
+@media screen and (max-width: 400px) {
+    .teas {
+     display: none;
+    }
+    .logo_img {
+        width: 50px;
+    } 
+    .main_title {
+        font-size: 5vh;
+    }
+    .nav_main a {
+        font-size: 3vh;
+    }
+    .deal_items {
+        grid-template-columns: 1fr;
+    }
+    .deal_title {
+        font-size: 3vh;
+    }
+    .deals h2 {
+        font-size: 2vh;
+    }
+    .galary {
+        width: 70%;
+    }
+    .title_review {
+        font-size: 2.5vh;
+    }
+    .comments {
+        font-size: 2vh;
+    }
+    .star h2 {
+        font-size: 1.7vh;
+    }
+    .star label {
+        font-size: 2vh;
+    }
+    .star .btn {
+        font-size: 1.7vh;
+    }
+    .contact p {
+        font-size: 1.7vh;
+    }
+    .Social a {
+        font-size: 1.7vh;
+    }
+    .book {
+        height: 800px;
+    }
+    .services {
+        grid-template-columns: 1fr;
+    }
+    .service h2 {
+        font-size: 4vh;
+    }
+    .service table td {
+        font-size: 2vh;
+    }
+}
 
 
 
