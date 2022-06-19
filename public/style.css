@@ -355,7 +355,10 @@
         font-size: 2vh;
     }
     .deals p {
-        font-size: 1.7vh;
+        font-size: 1.3vh;
+    }
+    .item {
+        margin-bottom: 5px;
     }
     .galary {
         width: 70%;
