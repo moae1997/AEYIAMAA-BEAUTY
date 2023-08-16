@@ -6,7 +6,7 @@ const {check, validationResult} = require("express-validator");
 const app = express();
 
 
-mongoose.connect("process.env.MONGO");
+mongoose.connect(process.env.MONGO);
 
 const reviewSchema = {
     name: String,
